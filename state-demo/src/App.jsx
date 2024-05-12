@@ -5,19 +5,15 @@ import Dumbo from "./Dumbo";
 import UsernameForm from "./UsernameForm";
 import SignupForm from "./SignupForm";
 import BetterSignupForm from "./BetterSignupForm";
+import ShoppingListForm from "./ShoppingListForm";
+import ShoppingList from "./ShoppingList";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <>
-      <h1>State demo!</h1>
-      <BetterSignupForm />
-      {/* <UsernameForm />
-      <br />
-      <SignupForm /> */}
-      {/* <Counter />
-      <Dumbo /> */}
+      <ShoppingList />
     </>
   );
 }

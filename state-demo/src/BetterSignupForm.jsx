@@ -10,8 +10,10 @@ function BetterSignupForm() {
     const changeField = evt.target.name;
     const newValue = evt.target.value;
     setFormData((currData) => {
-      currData[changeField] = newValue;
-      return { ...currData };
+      return {
+        ...currData,
+        [changeField]: newValue, // [evt.target.name]:evt.target.value,
+      };
     });
   };
   const handleSubmit = (evt) => {
